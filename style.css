@@ -1,0 +1,91 @@
+.game {
+    width: 2000px;
+    height: 600px;
+    border-bottom: 30rem solid #93FF93;
+    margin:auto ;
+}
+#man{
+width:70px;
+height:72px;
+background-image: url(img/man.jpg);
+background-size: 70px 70px;
+position: relative;
+top:550px;
+}
+#rip{
+width:70px;
+height:70px;
+background-image: url(img/rip.png);
+background-size: 70px 70px;
+position: relative;
+top:480px;
+left:1800px;
+animation: ripMove 1.5s 5 linear;
+}
+@keyframes ripMove {
+0%{left:1800px;
+opacity: 0;
+}
+1%{
+opacity: 1;}
+100%{
+left:0px}
+}
+.jump {
+animation: jump 0.4s linear;
+}
+
+@keyframes jump {
+0% {
+top:550px;}
+30% {
+top:400px;}
+50% {
+top:300px;}
+70% {
+top:400px;}
+85% {
+top:475px;}
+100% {
+550px;}
+}
+#wooman{
+       width:70px;
+       height:70px;
+       background-image: url(img/wooman.jpg);
+       background-size: 70px 70px;
+       position: relative;
+       top:409px;
+       left:1800px;
+       animation: olya 4s linear;
+       animation-fill-mode:forwards;
+       animation-delay: 7s;
+       }
+       @keyframes olya {
+       0%{left:1800px;
+       }
+       100%{
+       left:70px}
+       }
+#love{
+width 900px;
+height:620px;
+background-image: url(img/love.png);
+background-size: 70px 70px;
+       position: relative;
+       top:-300px;
+       left:0px;
+       opacity: 0;
+       animation: love 10s linear 11s forwards;
+       }
+       @keyframes love {
+              0%{left:0px;
+              }
+              5% {
+              opacity: 1;}
+              100%{
+              left:0px}
+              }
+
+
+
